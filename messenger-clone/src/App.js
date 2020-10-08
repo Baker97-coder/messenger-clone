@@ -44,18 +44,14 @@ function App() {
       <h2>Welcome {username}</h2>
 
       <form className="app__form">
-        <FormControl>
-          <InputLabel>Enter a message...</InputLabel>
-          <Input value={input} onChange={event => setInput(event.target.value)}/>
+        <FormControl className="app__formControl">
+          <Input className="app__input" placeholder="Enter a message..." value={input} onChange={event => setInput(event.target.value)}/>
 
-          <IconButton disabled ={!input} variant="contained" color="primary" type ="submit" onClick={sendMessage}>
+          <IconButton className="app__iconButton" disabled ={!input} variant="contained" color="primary" type ="submit" onClick={sendMessage}>
             <SendIcon />
           </IconButton>
         </FormControl>  
       </form>
-
-
-
 
       <FlipMove>
       {
