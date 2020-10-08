@@ -23,7 +23,6 @@ function App() {
 
   useEffect(() => {
     setUsername(prompt('Please enter your name'));
-    
   }, [])
 
   const sendMessage = (event) => {
